@@ -7,11 +7,8 @@ import Search from "../components/Search";
 export default function PokePage() {
   return (
     <>
-      <h1>
-        Aqui va a ir una barra de busqueda de pokemon y las busquedas recientes
-      </h1>
-        
         <Search/>
+        <h1>Abajo deben estar los elementos buscados enves de mandarte a una nueva pagina</h1>
     </>
   );
 }
