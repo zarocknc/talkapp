@@ -1,4 +1,3 @@
-'use client'
 import Link from "next/link";
 import {notFound} from "next/navigation"
 
@@ -18,7 +17,6 @@ const fetchPuchamonPorId = async (url: string, id?: string) => {
       const puchimon = await fetch(`${url}${id}`);
       if (puchimon.ok) {
         const result = await puchimon.json();
-        //console.log(result);
         return result;
       }
     } catch (error) {
